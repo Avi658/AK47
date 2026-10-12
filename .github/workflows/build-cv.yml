@@ -1,4 +1,3 @@
-```
 name: Build CV
 on:
   push:
@@ -8,7 +7,7 @@ on:
 
 permissions:
   contents: write
-  
+
 jobs:
   build-cv:
     runs-on: ubuntu-latest
@@ -19,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-        # for consistent rendering
+      # for consistent rendering
       - name: Install fonts 
         run: sudo apt-get update && sudo apt-get install -y fonts-liberation
 
@@ -35,13 +34,10 @@ jobs:
             --virtual-time-budget=10000 \
             --no-pdf-header-footer \
             --print-to-pdf=Aviv_Katz_CV.pdf \
-            "$(pwd)/raw/Aviv_Katz_CV.html"
+            "$(pwd)/Aviv_Katz_CV.html"
 
       - name: debug (pwd)
         run: ls -Alh
-
-      - name: debug (raw)
-        run: ls -Alh raw/
 
       - name: Create GitHub Release and upload PDF
         uses: softprops/action-gh-release@v2
@@ -49,4 +45,3 @@ jobs:
           files: Aviv_Katz_CV.pdf
           generate_release_notes: true
           tag_name: CV-${{ github.sha }}
-```
