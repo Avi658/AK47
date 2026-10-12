@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aviv Katz - Electrical Engineering Student</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #444;
+    --rule: #999;
+    --accent: #1a1a1a;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  body {
+    font-family: "Calibri", "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    color: var(--text);
+    font-size: 11pt;
+    line-height: 1.38;
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0.5in 0.6in;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    text-align: left;
+    margin-bottom: 12px;
+  }
+
+  h1.name {
+    font-size: 22pt;
+    margin: 0 0 2px 0;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+
+  .title {
+    font-size: 12pt;
+    color: var(--muted);
+    margin: 0 0 6px 0;
+    font-weight: 600;
+  }
+
+  .contact-line {
+    font-size: 10pt;
+    color: var(--muted);
+    margin: 0;
+  }
+  .contact-line span:not(:last-child)::after {
+    content: " | ";
+    color: var(--rule);
+  }
+
+  .contact-line a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  /* ---------- Section headings ---------- */
+  h2.section {
+    font-size: 12pt;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    border-bottom: 1.2px solid var(--text);
+    padding-bottom: 2px;
+    margin: 14px 0 6px 0;
+    font-weight: 700;
+  }
+
+  section:first-of-type h2.section {
+    margin-top: 6px;
+  }
+
+  /* ---------- Lists / Text ---------- */
+  .skills-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .skills-list li {
+    font-size: 10.3pt;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 3px;
+  }
+  .skills-list li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+  }
+
+  .item-block {
+    margin-bottom: 10px;
+  }
+  .item-block:last-child { margin-bottom: 0; }
+
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 2px 10px;
+  }
+
+  .item-title {
+    font-weight: 700;
+    font-size: 11pt;
+  }
+
+  .item-dates {
+    font-size: 9.8pt;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .item-subtitle {
+    font-size: 10.2pt;
+    color: var(--muted);
+    margin: 1px 0 3px 0;
+  }
+
+  ul.bullets {
+    margin: 3px 0 0 0;
+    padding-left: 18px;
+  }
+  ul.bullets li {
+    margin-bottom: 2.5px;
+    font-size: 10.3pt;
+  }
+
+  .availability-text {
+    font-size: 10.3pt;
+    margin: 2px 0 0 0;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  /* ---------- Print / PDF Rules ---------- */
+  @media print {
+    body {
+      padding: 0.4in 0.55in;
+      max-width: 100%;
+    }
+    a { color: var(--muted) !important; }
+    h2.section { break-after: avoid; }
+    .item-block { break-inside: avoid; }
+  }
+
+  @page {
+    size: Letter;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1 class="name">Aviv Katz</h1>
+    <p class="title">B.Sc. Electrical Engineering Student | VLSI & Computer Architecture</p>
+    <p class="contact-line">
+      <span><a href="tel:0558811625">055-8811625</a></span>
+      <span><a href="mailto:avivkatz550@gmail.com">avivkatz550@gmail.com</a></span>
+      <span>Israel</span>
+      <span><a href="https://linkedin.com">LinkedIn: Aviv Katz</a></span>
+    </p>
+  </header>
+
+  <section id="education">
+    <h2 class="section">Education</h2>
+    <div class="item-block">
+      <div class="item-header">
+        <span class="item-title">Ben-Gurion University of the Negev</span>
+        <span class="item-dates">3rd Year Student</span>
+      </div>
+      <p class="item-subtitle">
+        <strong>B.Sc. in Electrical Engineering</strong> | <strong>GPA: 93</strong>
+      </p>
+      <p class="item-subtitle">
+        <em>Specializations:</em> Semiconductor Devices, VLSI, Computer Architecture
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section">Technical Skills</h2>
+    <ul class="skills-list">
+      <li><strong>Hardware & VLSI:</strong> VLSI Architecture, ASIC Design Flow, Semiconductor Devices</li>
+      <li><strong>Programming & Scripting:</strong> Python (NumPy, SciPy), Linux/Bash Scripting</li>
+      <li><strong>Tools & Environments:</strong> Linux, Git, GitHub Actions</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2 class="section">Academic & Personal Projects</h2>
+
+    <div class="item-block">
+      <div class="item-header">
+        <span class="item-title">Linux NAS Server Configuration</span>
+        <span class="item-dates">Personal Project</span>
+      </div>
+      <ul class="bullets">
+        <li>Designed and configured a custom Network Attached Storage (NAS) server utilizing a Mini PC.</li>
+        <li>Administered the system entirely within a Linux environment, writing Bash and Python scripts for automated file management and storage operations.</li>
+      </ul>
+    </div>
+
+    <div class="item-block">
+      <div class="item-header">
+        <span class="item-title">Introduction to Electrical Engineering Lab</span>
+        <span class="item-dates">Academic Project</span>
+      </div>
+      <ul class="bullets">
+        <li>Conducted hands-on hardware experiments to analyze and validate analog and digital electrical circuits.</li>
+        <li>Processed and analyzed experimental lab data using Python scripting to extract key circuit performance metrics.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section">Military & Professional Experience</h2>
+
+    <div class="item-block">
+      <div class="item-header">
+        <span class="item-title">Independent Business Owner | Certified Rope Access Specialist</span>
+      </div>
+      <ul class="bullets">
+        <li>Founded and managed a specialized high-altitude rope access business, overseeing end-to-end technical project execution and client relations.</li>
+        <li>Directed complex technical operations with an uncompromising focus on risk management, strict safety compliance, and creative problem-solving in challenging physical environments.</li>
+      </ul>
+    </div>
+
+    <div class="item-block">
+      <div class="item-header">
+        <span class="item-title">IDF Elite Special Forces (Duvdevan Unit) | Combat Role</span>
+        <span class="item-dates">Military Service</span>
+      </div>
+      <ul class="bullets">
+        <li>Served in a highly classified special operations unit, executing complex missions in high-stress and dynamic environments.</li>
+        <li>Demonstrated exceptional teamwork, rapid problem-solving, and decisive execution under extreme pressure while maintaining absolute dedication to operational objectives.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="availability">
+    <h2 class="section">Availability</h2>
+    <p class="availability-text">
+      Available for an Electrical Engineering Student position (up to 2.5 days/week).
+    </p>
+  </section>
+
+</body>
+</html>
