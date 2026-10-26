@@ -3,146 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviv Katz - Resume</title>
+    <title>Aviv Katz - Curriculum Vitae</title>
     <style>
-        body { 
-            font-family: 'Arial', sans-serif; 
-            line-height: 1.5; 
-            color: #111; 
-            max-width: 850px; 
-            margin: 0 auto; 
-            padding: 40px; 
+        @page {
+            size: A4;
+            margin: 1.5cm 1.5cm;
         }
-        h1 { 
-            text-align: center; 
-            margin-bottom: 5px; 
-            font-size: 2.2em; 
-            text-transform: uppercase; 
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        .contact-info { 
-            text-align: center; 
-            margin-bottom: 25px; 
-            font-size: 0.95em; 
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #1a1a1a;
+            line-height: 1.45;
+            background-color: #ffffff;
+            font-size: 10pt;
         }
-        .contact-info a { 
-            color: #111; 
-            text-decoration: none; 
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        h2 { 
-            border-bottom: 1px solid #111; 
-            padding-bottom: 3px; 
-            margin-top: 25px; 
-            margin-bottom: 15px; 
-            font-size: 1.2em; 
-            text-transform: uppercase; 
-            letter-spacing: 1px;
+
+        /* Header */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #2b2b2b;
+            padding-bottom: 10px;
+            margin-bottom: 14px;
         }
-        .job-header { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: baseline; 
-            margin-bottom: 2px;
+
+        h1 {
+            font-size: 20pt;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 4px;
         }
-        .job-title { 
-            font-weight: bold; 
-            font-size: 1.05em; 
+
+        .subtitle {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 6px;
         }
-        .job-date { 
-            font-weight: bold; 
+
+        .contact-info {
+            font-size: 9.5pt;
+            color: #444444;
         }
-        .organization { 
-            font-style: italic; 
-            margin-bottom: 8px; 
+
+        .contact-info a {
+            color: #1a1a1a;
+            text-decoration: none;
         }
-        ul { 
-            margin-top: 5px; 
-            padding-left: 20px; 
-            margin-bottom: 15px; 
+
+        .contact-info span {
+            margin: 0 5px;
         }
-        li { 
-            margin-bottom: 5px; 
+
+        /* Section Headings */
+        section {
+            margin-bottom: 12px;
         }
-        .skills-category {
+
+        h2 {
+            font-size: 11pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            border-bottom: 1px solid #777777;
+            padding-bottom: 2px;
+            margin-bottom: 6px;
+            color: #000000;
+        }
+
+        /* Entry Blocks */
+        .entry {
             margin-bottom: 8px;
         }
-        .skills-category strong {
-            display: inline-block;
-            width: 220px;
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 700;
+            font-size: 10pt;
+            color: #111111;
+        }
+
+        .entry-subheader {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #333333;
+            margin-bottom: 3px;
+        }
+
+        /* Bullet Points */
+        ul {
+            list-style-type: disc;
+            margin-left: 18px;
+            margin-top: 2px;
+        }
+
+        li {
+            margin-bottom: 2px;
+            text-align: justify;
+        }
+
+        /* Skills format */
+        .skills-list p {
+            margin-bottom: 3px;
+            font-size: 9.5pt;
+        }
+
+        .skills-list strong {
+            color: #111111;
+        }
+
+        /* Print Media Optimization */
+        @media print {
+            body {
+                background: none;
+                font-size: 9.5pt;
+            }
+            .resume-container {
+                max-width: 100%;
+                padding: 0;
+            }
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Aviv Katz</h1>
-    <div class="contact-info">
-        Be'er Sheva, Israel | 055-8811625 | <a href="mailto:avivkatz550@gmail.com">avivkatz550@gmail.com</a> | <a href="https://linkedin.com/in/avivkatz">LinkedIn</a>
-    </div>
 
-    <h2>Education</h2>
-    <div>
-        <div class="job-header">
-            <span class="job-title">Ben-Gurion University of the Negev</span>
-            <span class="job-date">Oct 2024 &ndash; Expected Jul 2028</span>
+<div class="resume-container">
+
+    <!-- Header -->
+    <header>
+        <h1>Aviv Katz</h1>
+        <div class="subtitle">B.Sc. Electrical Engineering Student | VLSI &amp; Computer Architecture</div>
+        <div class="contact-info">
+            Israel <span>|</span> 055-8811625 <span>|</span> <a href="mailto:avivkatz550@gmail.com">avivkatz550@gmail.com</a> <span>|</span> LinkedIn: Aviv Katz
         </div>
-        <div class="organization">B.Sc. in Electrical and Computer Engineering | GPA: 92.7</div>
-        <ul>
-            <li><strong>Specializations:</strong> Semiconductor Devices, VLSI, Computer Architecture</li>
-            <li><strong>Relevant Coursework:</strong> Logic Design (100), Digital Systems (94), Data Structures, Foundations of Computer Science, Semiconductor Devices (95), Electromagnetic Fields (97), Signal Processing, Linear Systems</li>
-        </ul>
-    </div>
+    </header>
 
-    <h2>Technical Skills</h2>
-    <div class="skills-category">
-        <strong>Hardware & Architecture:</strong> Digital Logic Design, VLSI Fundamentals, Semiconductor Physics, CMOS Circuits
-    </div>
-    <div class="skills-category">
-        <strong>Programming & Scripting:</strong> C/C++, Python (NumPy, SciPy), MATLAB, Bash / Shell Scripting
-    </div>
-    <div class="skills-category">
-        <strong>Tools & Platforms:</strong> Linux/Unix, Git/GitHub, Docker, Docker Compose, Tailscale, SPICE
-    </div>
-
-    <h2>Technical Projects</h2>
-    <div>
-        <div class="job-header">
-            <span class="job-title">Home Lab & Infrastructure Architecture</span>
-            <span class="job-date">Personal Project</span>
+    <!-- Education -->
+    <section>
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span>Ben-Gurion University of the Negev</span>
+                <span>Beer-Sheva, Israel</span>
+            </div>
+            <div class="entry-subheader">
+                <span>B.Sc. in Electrical Engineering | GPA: 93</span>
+            </div>
+            <p style="font-size: 9.5pt;"><strong>Specializations:</strong> Semiconductor Devices, VLSI, Computer Architecture</p>
         </div>
-        <ul>
-            <li>Architected and deployed an Ubuntu-based home server on HP Mini hardware, integrating a 500GB NVMe SSD with custom partition mapping and <code>/etc/fstab</code> mount configurations.</li>
-            <li>Managed containerized microservices using Docker Compose, including Nextcloud, Jellyfin, MariaDB, and Pi-hole for network-wide DNS resolution and ad-blocking.</li>
-            <li>Configured a Zero Trust Network Access (ZTNA) mesh VPN using Tailscale, enabling secure cross-platform remote access (macOS, iOS, Windows) without public port forwarding.</li>
-        </ul>
+    </section>
 
-        <div class="job-header">
-            <span class="job-title">Digital Logic & Systems Design</span>
-            <span class="job-date">Academic Coursework</span>
+    <!-- Technical Skills -->
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <p><strong>Hardware &amp; Architecture:</strong> VLSI Architecture, ASIC Design Flow, Semiconductor Devices, Digital Systems</p>
+            <p><strong>Programming &amp; Scripting:</strong> Python (NumPy, SciPy, Matplotlib), MATLAB, Linux / Bash Scripting</p>
+            <p><strong>Algorithms &amp; Methods:</strong> Numerical Analysis, Finite Difference Method (FDM), Graph Algorithms (Dijkstra, A*), Data Structures</p>
+            <p><strong>Tools &amp; Environments:</strong> Linux, Git, GitHub Actions, Docker</p>
         </div>
-        <ul>
-            <li>Designed, simulated, and optimized digital logic circuits, combinational networks, and finite state machines, achieving top academic performance (Logic Design: 100, Digital Systems: 94).</li>
-            <li>Analyzed complex boolean architectures and applied theoretical concepts to practical hardware system models.</li>
-        </ul>
-    </div>
+    </section>
 
-    <h2>Military & Professional Experience</h2>
-    <div>
-        <div class="job-header">
-            <span class="job-title">Independent Business Owner | Certified Rope Access Specialist</span>
-            <span class="job-date">2021 &ndash; 2024</span>
+    <!-- Technical & Academic Projects -->
+    <section>
+        <h2>Technical &amp; Academic Projects</h2>
+        
+        <div class="entry">
+            <div class="entry-header">
+                <span>Electrostatic Boundary-Value Problem Modeling</span>
+                <span>Academic Project | MATLAB</span>
+            </div>
+            <ul>
+                <li>Modeled the electrostatic potential and electric field distribution of a point charge above an infinite conducting plane using analytical (Method of Images) and numerical approaches.</li>
+                <li>Implemented iterative numerical solvers (Finite Difference Method) to compute spatial potential gradients and induced surface charge density.</li>
+                <li>Validated numerical convergence rates and accuracy against closed-form analytical equations, evaluating grid resolution error tolerances.</li>
+                <li>Generated 2D and 3D visual representations of equipotential contours, electric field lines, and flux densities.</li>
+            </ul>
         </div>
-        <ul>
-            <li>Founded and managed a specialized high-altitude rope access business, overseeing end-to-end technical project execution and client relations.</li>
-            <li>Directed complex technical operations with an uncompromising focus on risk management, strict safety compliance, and creative problem-solving in challenging physical environments.</li>
-        </ul>
 
-        <div class="job-header">
-            <span class="job-title">Combat Role</span>
-            <span class="job-date">2018 &ndash; 2021</span>
+        <div class="entry">
+            <div class="entry-header">
+                <span>Graph Shortest Path &amp; Routing Algorithm</span>
+                <span>Software Project | Python</span>
+            </div>
+            <ul>
+                <li>Developed an algorithmic routing tool to compute optimal shortest paths between nodes across weighted directed and undirected graph topologies.</li>
+                <li>Implemented core pathfinding algorithms, including Dijkstra’s algorithm and priority-queue (min-heap) traversal, optimizing time and space complexity.</li>
+                <li>Designed a modular, object-oriented graph architecture supporting dynamic edge-weight assignment and custom network configurations.</li>
+                <li>Conducted performance benchmarking across sparse and dense graph datasets to evaluate runtime efficiency and scaling characteristics.</li>
+            </ul>
         </div>
-        <div class="organization">IDF Elite Special Forces (Duvdevan Unit)</div>
-        <ul>
-            <li>Served in a highly classified special operations unit, executing complex missions in high-stress and dynamic environments.</li>
-            <li>Demonstrated exceptional teamwork, rapid problem-solving, and decisive execution under extreme pressure while maintaining absolute dedication to operational objectives.</li>
-        </ul>
-    </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Linux NAS &amp; Server Infrastructure</span>
+                <span>Personal Project | Linux &amp; Python</span>
+            </div>
+            <ul>
+                <li>Architected and configured a custom Network Attached Storage (NAS) and local server environment utilizing a dedicated mini-PC.</li>
+                <li>Automated data management, storage pooling, and backup workflows by developing modular Bash and Python utility scripts.</li>
+                <li>Managed containerized service deployments and configured persistent local file hosting with proactive system health monitoring.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Military & Professional Experience -->
+    <section>
+        <h2>Military &amp; Professional Experience</h2>
+        
+        <div class="entry">
+            <div class="entry-header">
+                <span>Independent Business Owner | Certified Rope Access Specialist</span>
+                <span>Technical Operations</span>
+            </div>
+            <ul>
+                <li>Founded and managed a specialized high-altitude rope access enterprise, directing end-to-end technical execution and client operations.</li>
+                <li>Led high-risk technical projects with an uncompromising focus on safety protocols, regulatory compliance, risk assessment, and real-time problem-solving.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>IDF Elite Special Forces (Duvdevan Unit) | Combat Role</span>
+                <span>Military Service</span>
+            </div>
+            <ul>
+                <li>Served in a classified special operations unit, planning and executing high-stakes missions in unpredictable, dynamic environments.</li>
+                <li>Applied rapid critical thinking, decisive execution, and high-level team collaboration under extreme operational pressure.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Availability -->
+    <section>
+        <h2>Availability</h2>
+        <p style="font-size: 9.5pt;">Available for an Electrical Engineering Student position (up to 2.5 days/week).</p>
+    </section>
+
+</div>
+
 </body>
 </html>
