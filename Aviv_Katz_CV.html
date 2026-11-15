@@ -3,268 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviv Katz - Curriculum Vitae</title>
+    <title>Aviv Katz - Resume</title>
     <style>
-        @page {
-            size: A4;
-            margin: 10mm 14mm 8mm 14mm;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            color: #1a1a1a;
-            line-height: 1.36;
-            background-color: #ffffff;
-            font-size: 9.5pt;
-        }
-
-        .resume-container {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
             max-width: 800px;
             margin: 0 auto;
+            padding: 40px 20px;
         }
-
-        /* Header */
         header {
             text-align: center;
-            border-bottom: 1.5px solid #222222;
-            padding-bottom: 6px;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
-
         h1 {
-            font-size: 19pt;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            color: #000000;
-            margin-bottom: 3px;
-            line-height: 1.1;
-        }
-
-        .subtitle {
-            font-size: 10.5pt;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 4px;
-        }
-
-        .contact-info {
-            font-size: 9pt;
-            color: #444444;
-        }
-
-        .contact-info a {
-            color: #1a1a1a;
-            text-decoration: none;
-        }
-
-        .contact-info span {
-            margin: 0 4px;
-            color: #888888;
-        }
-
-        /* Section Headings */
-        section {
-            margin-bottom: 9px;
-        }
-
-        h2 {
-            font-size: 10.5pt;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            border-bottom: 1px solid #777777;
-            padding-bottom: 1.5px;
+            font-size: 28px;
             margin-bottom: 5px;
-            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-
-        /* Entry Blocks */
+        .contact-info {
+            font-size: 14px;
+            color: #555;
+        }
+        h2 {
+            font-size: 18px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
         .entry {
+            margin-bottom: 15px;
+        }
+        .entry-header {
+            margin-bottom: 5px;
+        }
+        .entry-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .entry-date {
+            float: right;
+            font-style: italic;
+            color: #555;
+        }
+        .clear {
+            clear: both;
+        }
+        ul {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+        li {
             margin-bottom: 6px;
         }
-
-        .entry-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            font-weight: 700;
-            font-size: 9.5pt;
-            color: #111111;
-        }
-
-        .entry-subheader {
-            display: flex;
-            justify-content: space-between;
-            font-style: italic;
-            font-size: 9pt;
-            color: #333333;
-            margin-bottom: 2px;
-        }
-
-        /* Bullet Points */
-        ul {
-            list-style-type: disc;
-            margin-left: 17px;
-            margin-top: 1px;
-        }
-
-        li {
-            margin-bottom: 1.5px;
+        p {
+            margin-top: 5px;
+            margin-bottom: 10px;
             text-align: justify;
         }
-
-        /* Skills format */
-        .skills-list p {
-            margin-bottom: 2px;
-            font-size: 9pt;
-            line-height: 1.34;
-        }
-
-        .skills-list strong {
-            color: #111111;
-        }
-
-        /* Print Media Optimization */
-        @media print {
-            body {
-                background: none;
-                font-size: 9.2pt;
-                line-height: 1.32;
-            }
-            .resume-container {
-                max-width: 100%;
-                padding: 0;
-            }
-            section {
-                margin-bottom: 7px;
-            }
-            .entry {
-                margin-bottom: 5px;
-            }
+        a {
+            color: #000;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
-<div class="resume-container">
-
-    <!-- Header -->
     <header>
         <h1>Aviv Katz</h1>
-        <div class="subtitle">B.Sc. Electrical Engineering Student | VLSI &amp; Computer Architecture</div>
         <div class="contact-info">
-            Israel <span>|</span> 055-8811625 <span>|</span> <a href="mailto:avivkatz550@gmail.com">avivkatz550@gmail.com</a> <span>|</span> LinkedIn: Aviv Katz
+            Be'er Sheva, Israel | 055-881-1625 | <a href="mailto:avivkatz550@gmail.com">avivkatz550@gmail.com</a> | <a href="#">LinkedIn Profile</a>
         </div>
     </header>
 
-    <!-- Education -->
-    <section>
+    <section class="section">
+        <h2>Professional Summary</h2>
+        <p>Third-year B.Sc. student in Electrical and Computer Engineering at Ben-Gurion University of the Negev with a 92.7 GPA. Highly motivated and an independent learner with a proven ability to perform under pressure, demonstrated through active and intensive reserve duty in a special operations unit (Duvdevan) alongside demanding academic studies. Seeking a challenging student position in Hardware (Digital Design, Validation) or Software, where I can leverage my theoretical knowledge, practical skills, and teamwork abilities to contribute and grow professionally.</p>
+    </section>
+
+    <section class="section">
         <h2>Education</h2>
         <div class="entry">
             <div class="entry-header">
-                <span>Ben-Gurion University of the Negev</span>
-                <span>Beer-Sheva, Israel</span>
+                <span class="entry-title">B.Sc. in Electrical and Computer Engineering, Ben-Gurion University of the Negev</span>
+                <span class="entry-date">2024 &ndash; 2028</span>
+                <div class="clear"></div>
             </div>
-            <div class="entry-subheader">
-                <span>B.Sc. in Electrical Engineering | GPA: 93</span>
-            </div>
-            <p style="font-size: 9pt;"><strong>Specializations:</strong> Semiconductor Devices, VLSI, Computer Architecture</p>
+            <ul>
+                <li><strong>Current GPA:</strong> 92.7</li>
+                <li><strong>Relevant Coursework:</strong> Logic Design, Digital Systems, Computer Architecture, Introduction to Semiconductors, Linear Systems, Introduction to Programming.</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Technical Skills -->
-    <section>
+    <section class="section">
         <h2>Technical Skills</h2>
-        <div class="skills-list">
-            <p><strong>Hardware &amp; Architecture:</strong> VLSI Architecture, ASIC Design Flow, Semiconductor Devices, Digital Systems</p>
-            <p><strong>Programming &amp; Scripting:</strong> Python (NumPy, SciPy, Matplotlib), MATLAB, Linux / Bash Scripting</p>
-            <p><strong>Algorithms &amp; Methods:</strong> Numerical Analysis, Finite Difference Method (FDM), Graph Routing Algorithms (Dijkstra, A*)</p>
-            <p><strong>Tools &amp; Environments:</strong> Linux, Git, GitHub Actions, Docker</p>
-        </div>
+        <ul>
+            <li><strong>Software &amp; Algorithms:</strong> Python, Data Structures (Linked Lists, Hash Maps), Algorithmic Problem Solving, Space and Time Complexity Optimization.</li>
+            <li><strong>Hardware &amp; Development:</strong> Logic Design, Mealy and Moore State Machines, Timing Constraints (t_setup, t_hold, t_pd), CMOS Gate Design, Processor Architectures (Simple RISC).</li>
+        </ul>
     </section>
 
-    <!-- Technical & Academic Projects -->
-    <section>
-        <h2>Technical &amp; Academic Projects</h2>
-        
+    <section class="section">
+        <h2>Military Service</h2>
         <div class="entry">
             <div class="entry-header">
-                <span>Electrostatic Boundary-Value Problem Modeling</span>
-                <span>Academic Project | MATLAB</span>
+                <span class="entry-title">Active &amp; Reserve Service, "Duvdevan" Special Operations Unit, IDF</span>
+                <span class="entry-date">[Draft Year] &ndash; Present</span>
+                <div class="clear"></div>
             </div>
             <ul>
-                <li>Modeled electrostatic potential and field distributions for a point charge above a conducting plane using analytical (Method of Images) and numerical approaches.</li>
-                <li>Implemented iterative numerical solvers (Finite Difference Method) to compute spatial potential gradients and surface charge density.</li>
-                <li>Validated numerical convergence rates and accuracy against closed-form analytical equations, evaluating grid error tolerances.</li>
-                <li>Generated 2D and 3D visual representations of equipotential contours, electric field lines, and flux densities.</li>
-            </ul>
-        </div>
-
-        <div class="entry">
-            <div class="entry-header">
-                <span>Graph Shortest Path &amp; Routing Algorithm</span>
-                <span>Software Project | Python</span>
-            </div>
-            <ul>
-                <li>Developed an algorithmic routing tool to calculate optimal shortest paths across weighted directed and undirected graph topologies using Dijkstra's algorithm.</li>
-                <li>Designed a modular, object-oriented graph architecture and benchmarked runtime execution across sparse and dense graph datasets.</li>
-            </ul>
-        </div>
-
-        <div class="entry">
-            <div class="entry-header">
-                <span>Linux NAS &amp; Server Infrastructure</span>
-                <span>Personal Project | Linux &amp; Python</span>
-            </div>
-            <ul>
-                <li>Architected and configured a custom Network Attached Storage (NAS) and local server environment utilizing a dedicated mini-PC.</li>
-                <li>Automated data management, storage pooling, and backup workflows by developing modular Bash and Python utility scripts.</li>
-                <li>Managed containerized service deployments and configured persistent local file hosting with proactive system health monitoring.</li>
+                <li><strong>Active Reserve Duty (2023 &ndash; Present):</strong> Performing extensive and meaningful reserve duty concurrently with full-time engineering studies. Successfully balancing these demands requires the highest level of self-discipline, mental resilience, strict time management, and the ability to adapt quickly between high-pressure environments.</li>
+                <li><strong>Mandatory Service:</strong> Combat Soldier. Operated in highly dynamic and complex situations, demonstrating exceptional teamwork and collaboration within small, specialized units. Proven ability to execute rapid decision-making and solve critical problems under extreme pressure.</li>
             </ul>
         </div>
     </section>
 
-    <!-- Military & Professional Experience -->
-    <section>
-        <h2>Military &amp; Professional Experience</h2>
-        
+    <section class="section">
+        <h2>Volunteering &amp; Social Involvement</h2>
         <div class="entry">
             <div class="entry-header">
-                <span>Independent Business Owner | Certified Rope Access Specialist</span>
-                <span>Technical Operations</span>
+                <span class="entry-title">Mentor and Tutor, "Perach" Tutorial Project</span>
+                <span class="entry-date">2026</span>
+                <div class="clear"></div>
             </div>
             <ul>
-                <li>Founded and managed a specialized high-altitude rope access enterprise, directing end-to-end technical execution and client operations.</li>
-                <li>Led high-risk technical projects with an uncompromising focus on safety protocols, regulatory compliance, risk assessment, and real-time problem-solving.</li>
-            </ul>
-        </div>
-
-        <div class="entry">
-            <div class="entry-header">
-                <span>IDF Elite Special Forces (Duvdevan Unit) | Combat Role</span>
-                <span>Military Service</span>
-            </div>
-            <ul>
-                <li>Served in a classified special operations unit, planning and executing high-stakes missions in unpredictable, dynamic environments.</li>
-                <li>Applied rapid critical thinking, decisive execution, and high-level team collaboration under extreme operational pressure.</li>
+                <li>Tutored and prepared high school students experiencing academic difficulties for their matriculation exams (Bagrut).</li>
+                <li>Built personalized learning plans and simplified complex educational materials.</li>
+                <li>Developed strong interpersonal skills, including patience, active listening, and the ability to empower and build students' self-confidence.</li>
             </ul>
         </div>
     </section>
 
-    <!-- Availability -->
-    <section>
-        <h2>Availability</h2>
-        <p style="font-size: 9pt;">Available for an Electrical Engineering Student position (up to 2.5 days/week).</p>
+    <section class="section">
+        <h2>Languages</h2>
+        <ul>
+            <li><strong>Hebrew:</strong> Native</li>
+            <li><strong>English:</strong> Highly Proficient (Reading, Writing, Speaking)</li>
+        </ul>
     </section>
-
-</div>
 
 </body>
 </html>
